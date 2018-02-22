@@ -1,0 +1,33 @@
+/*
+ Theme Name:     Divi Child Theme
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Eighty Three Agency
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+@import url("../Divi/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+/* style the get started cta button */
+            .Getstarted {border-style: solid;
+            border-width: 2px;
+            border-radius: 60px;
+            	border-color: rgba(255,255,255,1);
+            	height: 30px;}
+            .Getstarted a {color: #ffffff!important;}
+            li.Getstarted {
+                background-color:rgba(0,0,0,0);  
+                text-transform: uppercase; 
+                font-weight: normal;
+                text-align: center; 
+                line-height: 0px;
+                padding: 20px 30px 20px 30px!important;
+                -moz-transition: all 0.5s; 
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;}
+            li.Getstarted:hover {background-color:rgba(255,255,255,0.3)};
+ 

@@ -1,0 +1,389 @@
+/* Author: Hiury Oliveira <hiuryoliveira117@gmail.com> */
+
+/* Step by step form */
+body {
+  background: #f9f9f9 !important;
+  font-family: 'Bitter', serif;
+}
+
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+body fieldset {
+  box-shadow: 0 8px 10px #29a329;
+}
+
+body.error {
+  background: #f04000;
+}
+body.error fieldset {
+  box-shadow: 0 8px 10px #bd3200;
+}
+
+h1, h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bitter', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #007681;
+}
+
+h1 {
+  top: 24px;
+  font-size: 12px;
+}
+
+h2 {
+  top: 44px;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+ul.items {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  /*top: 30% !important;*/
+  left: -60px;
+  margin-top: 180px;
+  transform: translateY(-50%);
+}
+
+ul.items li {
+  width: 8px;
+  height: 8px;
+  margin: 10px 0;
+  background: #007681;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+ul.items li.active {
+  opacity: 1;
+}
+
+.image-primary {
+  margin-top: -18%;
+  height: 100px;
+  width: auto;
+  margin-left: 18%;
+  margin-bottom: 5%;
+}
+
+form {
+  position: absolute;
+  margin-top: 15%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+
+form fieldset {
+  position: absolute;
+  min-height: 130px;
+  min-width: 450px;
+  background: white;
+  border-radius: 3px;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+form fieldset input,
+form fieldset p {
+  width: 300px !important;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+form fieldset p {
+  margin-top: 22px;
+  text-align: center;
+  background: white !important;
+}
+
+form fieldset legend {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 80px;
+  font-size: larger;
+}
+
+form fieldset input {
+  height: 40px;
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+form fieldset input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+form fieldset input:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+form fieldset input::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+form fieldset input:-ms-input-placeholder {
+   text-align: center;
+}
+
+form fieldset .fieldset-footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+form fieldset .fieldset-footer button {
+  min-width: 120px;
+  padding: 0 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 1px;
+  transition: all .2s;
+  border: 0;
+  background-color: #3cdbc0;
+  box-shadow: 0 2px 2px #35a592;
+  border-radius: 25px!important;
+}
+
+
+.show-info-places {
+  position: relative;
+  margin-top: 35px !important;
+  /*padding-bottom: 25px!important;*/
+}
+
+form fieldset.enable {
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.5s ease-out 0.2s;
+  transform: scale(1);
+  animation: enable 0.5s ease-out 0.2s;
+  padding: 3em 0 1em 0!important;
+}
+
+form fieldset.disable {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  transform: translateY(120px) scale(0.9);
+}
+
+body.error fieldset {
+  transform-origin: 50% 100%;
+  animation: error 0.3s ease-out;
+}
+
+@keyframes enable {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes error {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Adding Hiury O. */
+body fieldset {
+  box-shadow: 0 8px 10px #ccc !important;
+}
+
+.fieldset-content {
+  text-align: center;
+  min-height: 120px;
+}
+
+#main-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col-login-box-alt, .col-register-box-alt {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.col-login-box-alt .login-box, .col-register-box-alt .register-box {
+  padding-top: 60px;
+}
+.page-login-alt .panel,
+.page-register-alt .panel {
+  border-radius: 0!important;
+}
+
+.login-box, .register-box {
+  margin: auto;
+  max-width: 400px;
+}
+
+.panel-white {
+  background: #fff;
+}
+
+.panel {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.login-box .login-footer,
+.register-box .register-footer {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+}
+
+.m-t-xs {
+  margin-top: 10px;
+}
+.text-sm {
+  font-size: 12px;
+}
+
+.btn-simple {
+  min-width: 120px;
+  padding: 0 15px;
+  margin: 10px 20px 10px 0 !important;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 1px;
+  transition: all .2s;
+  border: 0;
+  background-color: #3cdbc0;
+  box-shadow: 0 2px 2px #35a592;
+  border-radius: 25px !important;
+}
+
+.btn-simple:hover {
+  background-color: #35a592;
+}
+
+.btn-simple.selected {
+  background-color: #35a592;
+}
+
+/* Button more large */
+.btn-simple.large {
+  min-width: 300px !important;
+}
+
+.btn-simple.medium {
+  min-width: 180px !important;
+}
+
+
+.panel-default>.panel-heading {
+  color: #fff;
+  background-color: #007681;
+  border-color: #35a592;
+}
+
+.panel-default {
+  font-family: 'Raleway', sans-serif;
+}
+
+.panel-default b {
+  font-weight: 900;
+  color: #007681;
+}
+
+.modal-content {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+
+.modal-content span.lite {
+  text-transform: capitalize;
+  color: #35a592;
+  font-size: 13px;
+}
+
+.modal-footer .modal-footer {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.btn-default-modal,
+.btn-default-modal:hover{
+  background-color: #fff;
+  /*margin-top: 15%;*/
+  margin-top: 2%;
+  border-color: #35a592;
+  color: #35a592;
+  font-size: 25px;
+  border-radius: 0px;
+}
+
+#years {
+  color: #35a592;
+  font-size: 27px;
+}
+
+#showErroModal {
+  color: #35a592;
+  font-size: 25px;
+}
+
+#emailInput {
+  border-radius: 0;
+  border-color: #35a592;
+  color: #35a592;
+}
+
+#nameInput {
+  border-radius: 0;
+  border-color: #35a592;
+  color: #35a592;
+}
+
+#phoneInput {
+  border-radius: 0;
+  border-color: #35a592;
+  color: #35a592;
+}
+
+.for-email {
+  color: #35a592;
+  text-transform: uppercase;
+  text-align: left;
+}

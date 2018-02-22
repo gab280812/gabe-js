@@ -1,0 +1,1 @@
+[15-May-2017 22:28:35 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/mikell51058298/public_html/wp-includes/load.php on line 316
