@@ -178,7 +178,7 @@
               <img src="public/images/blinkmortgageutah.svg" alt="Blink Mortgage Utah" class="image-primary">
 
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default invisible" id="one">
+                <div class="panel panel-default" id="one">
                   <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Property Location
