@@ -272,6 +272,45 @@
                     </div>
                   </div>
                 </div>
+                <div class="panel panel-default invisible" id="six">
+                  <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                     Are you a United States Veteran?
+                    </h4>
+                  </div>
+                  <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                      <p> Special programs are available to US Veterans when buying a house</p>
+                    </div>
+                  </div>
+                </div>
+               <div class="panel panel-default invisible" id="seven">
+                  <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                     What is your price range?
+                    </h4>
+                  </div>
+                  <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                    <div class="panel-body">
+                      <p> Price range will affect down-payment and other variables.</p>
+                    </div>
+                  </div>
+                </div>
+               <div class="panel panel-default invisible" id="eight">
+                  <div class="panel-heading" role="tab" id="headingEight">
+                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                     PRICE RANGE
+                    </h4>
+                  </div>
+                  <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                    <div class="panel-body">
+                      <p id='priceEight'></p>
+                    </div>
+                  </div>
+                </div>
+
+
+
               </div>
 
               <p class="text-center" style="position: absolute; bottom: 10%; left: 0; right: 0;">

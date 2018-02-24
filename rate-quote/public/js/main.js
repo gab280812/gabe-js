@@ -425,6 +425,15 @@ $(function(){
     $("#btnYNoSureComfortable").removeClass("selected");
     $("#btnYesComfortable").addClass("selected");
     nextAction(); // Action.
+
+        // accordion stuff
+    console.log('inside yes comfortable');
+    var b_five = document.getElementById('five');
+    var b_six = document.getElementById('six');
+    b_five.classList.add('invisible');
+    b_six.classList.remove('invisible');
+    $('#collapseFive').collapse('hide');
+    $('#collapseSix').collapse('show');
   });
 
   $("#btnNoComfortable").click(function () {
@@ -432,6 +441,16 @@ $(function(){
     $("#btnYNoSureComfortable").removeClass("selected");
     $("#btnNoComfortable").addClass("selected");
     nextAction(); // Action.
+
+            // accordion stuff
+    console.log('inside no comfortable');
+    var b_five = document.getElementById('five');
+    var b_six = document.getElementById('six');
+    b_five.classList.add('invisible');
+    b_six.classList.remove('invisible');
+    $('#collapseFive').collapse('hide');
+    $('#collapseSix').collapse('show');
+ 
   });
 
   $("#btnYNoSureComfortable").click(function () {
@@ -439,6 +458,15 @@ $(function(){
     $("#btnNoComfortable").removeClass("selected");
     $("#btnYNoSureComfortable").addClass("selected");
     nextAction(); // Action.
+
+        // accordion stuff
+    console.log('inside unsure ARM');
+    var b_five = document.getElementById('five');
+    var b_six = document.getElementById('six');
+    b_five.classList.add('invisible');
+    b_six.classList.remove('invisible');
+    $('#collapseFive').collapse('hide');
+    $('#collapseSix').collapse('show');
   });
 	// ..........................
 
@@ -448,12 +476,32 @@ $(function(){
     $("#btnNoVeteran").removeClass("selected");
     $("#btnYesVeteran").addClass("selected");
     nextAction(); // Action.
+        // accordion stuff
+    console.log('inside yes veteran');
+    var b_six = document.getElementById('six');
+    var b_seven = document.getElementById('seven');
+    b_six.classList.add('invisible');
+    b_seven.classList.remove('invisible');
+    $('#collapseFive').collapse('hide');
+    $('#collapseSix').collapse('hide');
+    $('#collapseSeven').collapse('show');
+
   });
 
 	$("#btnNoVeteran").click(function () {
     $("#btnYesVeteran").removeClass("selected");
     $("#btnNoVeteran").addClass("selected");
     nextAction(); // Action.
+
+            // accordion stuff
+    console.log('inside no veteran');
+    var b_six = document.getElementById('six');
+    var b_seven = document.getElementById('seven');
+    b_six.classList.add('invisible');
+    b_seven.classList.remove('invisible');
+    $('#collapseFive').collapse('hide');
+    $('#collapseSix').collapse('hide');
+    $('#collapseSeven').collapse('show');
   });
 
   // Section 08.
@@ -461,8 +509,9 @@ $(function(){
 
 	$("#value_expecting").on('change', function() {
     var a = $("#value_expecting").maskMoney('unmasked')[0];
-	  // console.log(a); // Debug.
+	  //console.log(a); // Debug.
 	  var expecting = parseInt(a);
+    var b_insert = expecting;
 		if (expecting > 0) {
 	    $(".expecting").removeClass("invisible");
 			$("#ExpectingPay").click(function() {
@@ -473,6 +522,17 @@ $(function(){
         var entrada = (((data['appraisedvalue'] / 100) * 20) * 100);
         $('#value_putdown').val(entrada);
         $('#value_putdown').focus();
+            // accordion stuff
+    console.log('inside pay expect');
+    var b_seven = document.getElementById('seven');
+    var b_eight = document.getElementById('eight');
+    var priceEight = document.getElementById('priceEight');
+    b_seven.classList.add('invisible');
+    b_eight.classList.remove('invisible');
+    $('#collapseSeven').collapse('hide');
+    $('#collapseEight').collapse('show');
+    priceEight.innerHTML = b_insert;
+
 			});
 		}
 	});
