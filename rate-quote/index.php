@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <link rel="stylesheet" href="public/css/vendor.css">
+    <link rel="stylesheet" href="public/css/b-custom.css">
     <link rel="shortcut icon" href="http://blinkmortgageutah.com/wp-content/uploads/2017/05/Christian-Mortgage-Logo.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -46,6 +47,7 @@
               <legend class="text-center">2. What do you want to do?</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-6">
                     <button type="button" id="purchase" class="btn-simple pull-right">Purchase</button>
                   </div>
