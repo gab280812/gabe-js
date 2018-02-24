@@ -290,6 +290,14 @@ $(function(){
     $("#btnInvestmentHome").removeClass("selected");
     $("#btnPrimaryHome").addClass("selected");
     nextAction(); // Action.
+
+      // $('#collapseTwo').collapse('hide');
+    //$('#collapseOne').collapse('hide');
+    $('#collapseThree').collapse('hide');
+    console.log('running primary home listneer');
+    var b_four = document.getElementById('four');
+    b_four.classList.remove('invisible');
+    $('#collapseFour').collapse('show');
   });
 
   $("#btnSecondaryHome").click(function () {
@@ -297,6 +305,13 @@ $(function(){
     $("#btnInvestmentHome").removeClass("selected");
     $("#btnSecondaryHome").addClass("selected");
     nextAction(); // Action.
+
+    // accordion stuff
+    $('#collapseThree').collapse('hide');
+    console.log('running secondary home listneer');
+    var b_four = document.getElementById('four');
+    b_four.classList.remove('invisible');
+    $('#collapseFour').collapse('show');
   });
 
   $("#btnInvestmentHome").click(function () {
@@ -304,6 +319,13 @@ $(function(){
     $("#btnSecondaryHome").removeClass("selected");
     $("#btnInvestmentHome").addClass("selected");
     nextAction(); // Action.
+
+    //accordion stuff
+    $('#collapseThree').collapse('hide');
+    console.log('running investment home listneer');
+    var b_four = document.getElementById('four');
+    b_four.classList.remove('invisible');
+    $('#collapseFour').collapse('show');
   });
 
   // Section 06.
@@ -318,6 +340,15 @@ $(function(){
 		data['loanProduct4']   = "7 year ARM/30 yrs";
 		data['loanProduct5']   = "7 year ARM/30 yrs";
     nextAction(); // Action.
+
+    // accordion stuff
+    console.log('inside 5-7');
+    var b_four = document.getElementById('four');
+    var b_five = document.getElementById('five');
+    b_four.classList.add('invisible');
+    b_five.classList.remove('invisible');
+    $('#collapseFour').collapse('hide');
+    $('#collapseFive').collapse('show');
   });
 
 	$("#btnLessThan15Yrs").click(function () {
@@ -331,6 +362,15 @@ $(function(){
 		data['loanProduct4']   = "10 year fixed";
 		data['loanProduct5']   = "10 year fixed";
     nextAction(); // Action.
+
+    // accordion stuff
+    console.log('inside less than 15');
+    var b_four = document.getElementById('four');
+    var b_five = document.getElementById('five');
+    b_four.classList.add('invisible');
+    b_five.classList.remove('invisible');
+    $('#collapseFour').collapse('hide');
+    $('#collapseFive').collapse('show');
   });
 
 	$("#MoreThan15Yrs").click(function () {
@@ -344,6 +384,15 @@ $(function(){
 		data['loanProduct4']   = "20 year fixed";
 		data['loanProduct5']   = "20 year fixed";
     nextAction(); // Action.
+
+    // accordion stuff
+    console.log('inside more than 15');
+    var b_four = document.getElementById('four');
+    var b_five = document.getElementById('five');
+    b_four.classList.add('invisible');
+    b_five.classList.remove('invisible');
+    $('#collapseFour').collapse('hide');
+    $('#collapseFive').collapse('show');
   });
 
 	$("#NotSure").click(function () {
@@ -357,6 +406,15 @@ $(function(){
 		data['loanProduct4']   = "Other Products";
 		data['loanProduct5']   = "Other Products";
     nextAction(); // Action.
+
+        // accordion stuff
+    console.log('inside not sure');
+    var b_four = document.getElementById('four');
+    var b_five = document.getElementById('five');
+    b_four.classList.add('invisible');
+    b_five.classList.remove('invisible');
+    $('#collapseFour').collapse('hide');
+    $('#collapseFive').collapse('show');
   });
 
 	// ..........................

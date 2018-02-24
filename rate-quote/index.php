@@ -62,6 +62,7 @@
               <legend class="text-center">3. What type of property is it?</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-12">
                     <button type="button" id="btnSingleFamily" class="btn-simple large">Single Family Residence</button>
                   </div>
@@ -79,6 +80,7 @@
               <legend class="text-center">4. This property will be used as a</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-12">
                     <button type="button" id="btnPrimaryHome" class="btn-simple large">Primary Home</button>
                   </div>
@@ -96,6 +98,7 @@
               <legend class="text-center">5. How long do you plan to own <br> this property?</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-6">
                     <button type="button" id="btn5to7Yrs" class="btn-simple medium">5 to 7 Yrs</button>
                     <button type="button" id="btnLessThan15Yrs" class="btn-simple medium">Less than 15 Yrs</button>
@@ -112,6 +115,7 @@
               <legend class="text-center">6. Are you comfortable with an <br> adjustable rate loan?</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-12">
                     <button type="button" id="btnYesComfortable" class="btn-simple medium">Yes</button>
                     <button type="button" id="btnNoComfortable" class="btn-simple medium">No</button>
@@ -125,6 +129,7 @@
               <legend class="text-center">7. Are you a United States Veteran?</legend>
               <div class="text-center fieldset-content">
                 <div class="row">
+                  <button class='bBack'  type='button'>BACK</button>
                   <div class="col-md-12">
                     <button type="button" id="btnYesVeteran" class="btn-simple medium">Yes</button>
                     <button type="button" id="btnNoVeteran" class="btn-simple medium">No</button>
@@ -136,21 +141,27 @@
             <fieldset class="">
               <legend class="text-center">8. What are you expecting to pay for <br> this property?</legend>
               <div class="text-center fieldset-content">
+                <div class='row'>
+                  <button class='bBack'  type='button'>BACK</button>
                 <input type="text" name="value_expecting" id="value_expecting" value="">
               </div>
               <div class="fieldset-footer">
                 <button type="button" name="next" class="next expecting" id="ExpectingPay">Next</button>
               </div>
+            </div>
             </fieldset>
 
             <fieldset class="">
               <legend class="text-center">9. How much are you expecting to put down?</legend>
+              <div class='row'>
+                <button class='bBack'  type='button'>BACK</button>
               <div class="text-center fieldset-content">
                 <input type="text" name="value_putdown" id="value_putdown" value="">
               </div>
               <div class="fieldset-footer">
                 <button type="button" name="next" class="next putDown" id="PutDown">Next</button>
               </div>
+            </div>
             </fieldset>
 
             <!--
@@ -229,6 +240,35 @@
 
                       <b>Investment Home: </b>
                       Property that is earning a return either through rent, the future resale of the property, or both.
+                    </div>
+                  </div>
+                </div>
+                  <div class="panel panel-default invisible" id="four">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                     Length of Ownership
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <ul>
+                        <li style='margin:5px;'> 5 - 7 years (short-term)</li>
+                        <li style='margin:5px;'> Less than 15 years </li>
+                        <li style='margin:5px;'> More than 15 years (long-term)</li>
+                        <li style='margin:5px;'> Not sure (that's okay too)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default invisible" id="five">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                     Adjustable Rate Loan
+                    </h4>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+                      <p> A variable-rate mortgage, adjustable-rate mortgage (ARM), or tracker mortgage is a mortgage loan with the interest rate on the note periodically adjusted based on an index which reflects the cost to the lender of borrowing on the credit markets. The loan may be offered at the lender's standard variable rate/base rate.</p>
                     </div>
                   </div>
                 </div>
